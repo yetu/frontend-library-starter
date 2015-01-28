@@ -12,7 +12,7 @@
 1. Clone the project to your working directory:
 
     ```
-    git clone git@bitbucket.org:yetu/frontend-library-starter.git <library_name>
+    git clone git@github.com:yetu/frontend-library-starter.git <library_name>
     cd <library_name>
     ```
 
