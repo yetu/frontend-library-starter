@@ -1,0 +1,36 @@
+{
+  "name": "__LIB_NAME__",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/karma/bin/karma start ./karma.conf.js --single-run",
+    "tdd": "node ./node_modules/karma/bin/karma start ./karma.conf.js",
+    "js-files": "find . -name '*.js' ! -path './node_modules/*' ! -path './coverage/*' ! -path './dist/*'",
+    "jshint": "node_modules/.bin/jshint `npm run -s js-files`",
+    "fixmyjs": "node_modules/.bin/fixmyjs --legacy `npm run -s js-files`",
+    "verify": "npm run fixmyjs; npm run jshint",
+    "precommit": "npm test && npm run verify"
+  },
+  "repository": {},
+  "author": "yetu",
+  "license": "MIT",
+  "devDependencies": {
+    "fixmyjs": "^1.0.2",
+    "husky": "^0.6.2",
+    "istanbul": "^0.3.5",
+    "istanbul-instrumenter-loader": "^0.1.2",
+    "jasmine-core": "^2.1.3",
+    "jshint": "^2.6.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-coverage": "^0.2.7",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-jasmine": "^0.3.5",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-safari-launcher": "^0.1.1",
+    "karma-webpack": "^1.5.0",
+    "webpack": "^1.5.3"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,15 @@
+{
+  "name": "__LIB_NAME__",
+  "version": "1.0.0",
+  "authors": [
+    "yetu"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
