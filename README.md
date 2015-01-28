@@ -73,6 +73,11 @@ This project has a **git hooks integration**, which will run tests and check you
 
 You are safeguarded against silly mistakes by `jshint` and `fixmyjs`!
 
+You will not be able to commit the code with:
+
+1. Failing tests
+2. Bad javascript code style
+
 # Requirements for code
 
 1. All your modules should be AMD modules! (As you are writing code for browser)

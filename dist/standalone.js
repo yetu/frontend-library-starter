@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define(factory);
 	else if(typeof exports === 'object')
-		exports._yetu_notifications_client = factory();
+		exports["__GLOBAL_NAME__"] = factory();
 	else
-		root._yetu_notifications_client = factory();
+		root["__GLOBAL_NAME__"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -58,10 +58,24 @@ return /******/ (function(modules) { // webpackBootstrap
 	'use strict';
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
 	 // dependencies go here
-	], __WEBPACK_AMD_DEFINE_RESULT__ = function( /* dependencies params go here */){
+	 __webpack_require__(1)
+	], __WEBPACK_AMD_DEFINE_RESULT__ = function( module /* dependencies params go here */){
 
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
+
+	// this is a custom module of your library
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
+
+	], __WEBPACK_AMD_DEFINE_RESULT__ = function(){
+
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
+
 /***/ }
-/******/ ]);
+/******/ ])
 });
