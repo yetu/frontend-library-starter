@@ -1,5 +1,7 @@
 # Frontend Library Starter
+[![bitHound Score](https://www.bithound.io/yetu/frontend-library-starter/badges/score.svg?)](https://www.bithound.io/yetu/frontend-library-starter)
 
+A starter for Javascript frontend libraries, targeted for AMD/CommonJS/Standalone consumtion.
 
 ## Setup
 
