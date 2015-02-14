@@ -2,7 +2,7 @@
 'use strict';
 define([
  // dependencies go here
- './lib/module'
+ './src/module'
 ], function( module /* dependencies params go here */){
-
+  return module;
 });

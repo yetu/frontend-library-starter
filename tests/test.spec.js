@@ -6,6 +6,7 @@ var index = require('../index');
 
 describe('Some test', function(){
 	it('should check something', function(){
-		expect(Object.create).toBeDefined();
+		expect(index).toBeDefined();
+    expect(index()).toEqual('This is an example function');
 	});
 });
