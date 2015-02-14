@@ -41,7 +41,10 @@ npm install
 
 ```
 
-Note: `__my-lib-global-name` is an optional parameter.
+**Note**: `originate` utility is a part of `loom` installation.
+`frontend-lib` is a template for libraries, you can find it [here](https://github.com/mr-mig/originate-frontend-lib).
+
+**Note**: `__my-lib-global-name` is an optional parameter.
 It defaults to your library name prefixed with `_` character.
 It is a global name used in `standalone` build to register your library in browsers `window` object.
 
