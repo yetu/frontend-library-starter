@@ -7,7 +7,7 @@ So, we have packed some real magic inside...
 * All major and new module formats are supported: [AMD][14], [CommonJS][15], [ES6 Modules](http://wiki.ecmascript.org/doku.php?id=harmony:specification_drafts#august_24_2014_draft_rev_27)
     Almost anyone can use your library in browser and NodeJS!
 * [Webpack][1], [RequireJS][20], [Browserify][21], [SystemJS][22] compatible!
-    You should not worry how your module will be bundled!
+    You should not worry how your module will be bundle
 * Can be used in a browser directly: [Webpack][1] build configured to produce a [standalone][2] [UMD][3] version in `dist/standalone.js`
     We got those oldschool guys covered as well.
 * [Karma][4] + [Jasmine][5] test setup (with CI integration for PhantomJS and Firefox!)

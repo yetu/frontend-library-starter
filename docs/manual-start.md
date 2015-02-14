@@ -158,3 +158,5 @@ Now it's time to publish the thing!
 ### Pimp my workflow
 
 Have you seen the [automated workflow suggestion](automate-routine.md)?
+
+Also, you may want to add your github repo to [travis](travis-ci.org) and [coveralls](coveralls.org/).

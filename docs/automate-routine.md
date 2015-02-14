@@ -145,3 +145,7 @@ Now it's time to publish the thing!
     ```
     bower register <my-lib-name> <my-git-endpoint>
     ```
+
+## Continuous Integration
+
+You may want to add your github repo to [travis](travis-ci.org) and [coveralls](coveralls.org/).
