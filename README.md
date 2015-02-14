@@ -85,3 +85,4 @@ You will not be able to commit the code with:
 1. All your modules should be AMD modules! (As you are writing code for browser)
 2. Your library should have a standalone javascript build file in `/dist` (webpack is handling that automatically)
 3. Make attention to *external* dependencies! All those dependencies should be managed by `bower`.
+
