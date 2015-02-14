@@ -40,7 +40,8 @@ module.exports = function (config) {
 				{type: 'cobertura', file: 'cobertura.xml'},
 				{type: 'text', file: 'text.txt'},
 				{type: 'text-summary', file: 'text-summary.txt'},
-				{type: 'html'}
+				{type: 'html'},
+        {type: 'lcov', file: 'lcov.info'}
 			]
 		},
 		port: 9876,
