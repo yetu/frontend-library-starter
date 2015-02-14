@@ -7,21 +7,21 @@ Wise choice.
 ### Prerequisites
 
 
-1. Ensure that NodeJS is installed.
-    You need it to use the integrated build and test tools.
+1. Ensure that NodeJS is installed.  
+    You need it to use the integrated build and test tools.  
     **Note**: Please, use node version 0.10 for now.
 
-1. Install [loom](https://www.npmjs.com/package/loom).
+1. Install [loom](https://www.npmjs.com/package/loom).  
     This is a generator, you will initialize new projects with it.
 
     ```
     npm install -g loom
     ```
 
-1. Install [hub](https://hub.github.com/).
+1. Install [hub](https://hub.github.com/).  
     You will need it to work with github from CLI.
 
-1. Install [mversion](https://www.npmjs.com/package/mversion).
+1. Install [mversion](https://www.npmjs.com/package/mversion).  
     You will update those versions in `bower.json` and `package.json` with that tool.
 
     ```
@@ -30,7 +30,7 @@ Wise choice.
 
 ### Starting new project
 
-So, you want to create `my-lib` library.
+So, you want to create `my-lib` library.  
 You need to run these commands:
 
 ```bash
@@ -41,11 +41,11 @@ npm install
 
 ```
 
-**Note**: `originate` utility is a part of `loom` installation.
+**Note**: `originate` utility is a part of `loom` installation.  
 `frontend-lib` is a template for libraries, you can find it [here](https://github.com/mr-mig/originate-frontend-lib).
 
-**Note**: `__my-lib-global-name` is an optional parameter.
-It defaults to your library name prefixed with `_` character.
+**Note**: `__my-lib-global-name` is an optional parameter.  
+It defaults to your library name prefixed with `_` character.  
 It is a global name used in `standalone` build to register your library in browsers `window` object.
 
 Now you can automagically push the initial version of your library to github:
@@ -62,7 +62,7 @@ This set of commands will create `my-lib` repo under your github account!
 ### Testing things
 
 
-We have included testing in `Chrome`, `Firefox`, `PhantomJS` and `Safari` by default.
+We have included testing in `Chrome`, `Firefox`, `PhantomJS` and `Safari` by default.  
 You can turn some of those browsers off in `karma.conf.js`
 
 To run a single test use:
@@ -77,7 +77,7 @@ To run a continuous tdd session use:
 npm run tdd
 ```
 
-This commands will run `karma` test runner with `jasmine` framework.
+This commands will run `karma` test runner with `jasmine` framework.  
 After the test run you will get **test coverage reports** inside the `/coverage` folder!
 
 
