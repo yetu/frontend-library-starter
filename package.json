@@ -4,18 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/karma/bin/karma start ./karma.conf.js --single-run",
-    "tdd": "node ./node_modules/karma/bin/karma start ./karma.conf.js",
+    "test-ci": "./node_modules/karma/bin/karma start ./karma.conf.js --single-run --browsers PhantomJS,Firefox",
+    "test": "./node_modules/karma/bin/karma start ./karma.conf.js --single-run",
+    "tdd": "./node_modules/karma/bin/karma start ./karma.conf.js",
     "js-files": "find . -name '*.js' ! -path './node_modules/*' ! -path './coverage/*' ! -path './dist/*'",
     "jshint": "node_modules/.bin/jshint `npm run -s js-files`",
     "fixmyjs": "node_modules/.bin/fixmyjs --legacy `npm run -s js-files`",
     "verify": "npm run fixmyjs; npm run jshint",
-    "precommit": "npm test && npm run verify"
+    "precommit": "npm test && npm run verify",
+    "pack": "./node_modules/.bin/webpack -p",
+    "coveralls" : "npm run test-ci && cat ./coverage/phantomjs/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {},
   "author": "yetu",
   "license": "MIT",
   "devDependencies": {
+    "coveralls": "^2.11.1",
     "fixmyjs": "^1.0.2",
     "husky": "^0.6.2",
     "istanbul": "^0.3.5",

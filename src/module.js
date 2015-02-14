@@ -5,5 +5,5 @@ define([
 ], function(){
   return function example(){
     return 'This is an example function';
-  }
+  };
 });
