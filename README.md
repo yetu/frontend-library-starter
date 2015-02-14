@@ -1,5 +1,7 @@
 # Frontend Library Starter
 [![bitHound Score](https://www.bithound.io/yetu/frontend-library-starter/badges/score.svg?)](https://www.bithound.io/yetu/frontend-library-starter)
+[![Build Status](https://travis-ci.org/yetu/frontend-library-starter.svg?branch=master)](https://travis-ci.org/yetu/frontend-library-starter)
+[![Coverage Status](https://coveralls.io/repos/yetu/frontend-library-starter/badge.svg)](https://coveralls.io/r/yetu/frontend-library-starter)
 
 A starter for Javascript frontend libraries, targeted for AMD/CommonJS/Standalone consumtion.
 
