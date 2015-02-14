@@ -17,7 +17,7 @@
     "build-standalone": "./node_modules/.bin/webpack",
     "build-all": "rm -rf ./dist && npm run build-commonjs && npm run build-amd && npm run build-system && npm run build-standalone",
     "verify": "npm run fixmyjs; npm run jshint",
-    "precommit": "npm run build-all && npm test && npm run verify"
+    "precommit": "npm run build-all && git add dist && npm test && npm run verify"
   },
   "repository": {},
   "author": "yetu",
