@@ -20,6 +20,7 @@ So, we have packed some real magic inside...
     You cannot commit bad code and break all things.
 * Out-of-box integration with [travis][11], [coveralls][12] and [bithound][19]
     Everything is automated! Get those cool badges!
+* Sane defaults for [`.editorconfig`][23], [`.npmignore`][24] and [`.gitignore`][25]
 
 
 
@@ -46,3 +47,6 @@ So, we have packed some real magic inside...
   [20]:http://requirejs.org/
   [21]:http://browserify.org/
   [22]:https://github.com/systemjs/systemjs
+  [23]:http://editorconfig.org/
+  [24]:https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package
+  [25]:https://github.com/github/gitignore
