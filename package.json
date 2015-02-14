@@ -2,7 +2,7 @@
   "name": "__LIB_NAME__",
   "version": "0.9.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/commonjs/index.js",
   "scripts": {
     "test-ci": "./node_modules/karma/bin/karma start ./karma.conf.js --single-run --browsers PhantomJS,Firefox",
     "test": "./node_modules/karma/bin/karma start ./karma.conf.js --single-run",
@@ -44,5 +44,12 @@
     "karma-webpack": "^1.5.0",
     "webpack": "^1.5.3"
   },
-  "dependencies": {}
-}
+  "jspm": {
+    "main": "./dist/system/index",
+    "format": "register",
+    "directories": {
+      "lib": "dist"
+    }
+  },
+    "dependencies": {}
+  }
