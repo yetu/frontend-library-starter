@@ -12,7 +12,7 @@
   "noarg": true,
   "nonew": true,
   "quotmark": "single",
-  "strict": true,
+  "strict": false,
   "maxdepth": 3,
   "maxstatements": 15,
   "maxlen": 100,

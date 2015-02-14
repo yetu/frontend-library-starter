@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/index.js"],"names":[],"mappings":";;;iBACwB,OAAO;AAAhB,SAAS,OAAO,GAAG;AAChC,SAAO,6BAA6B,CAAC;CACtC","file":"src/index.js","sourcesContent":["// this is the entry point for your library\nexport default function example() {\n  return 'This is an example function';\n}"]}

@@ -54,27 +54,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;// this is the entry point for your library
-	'use strict';
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-	 // dependencies go here
-	 __webpack_require__(1)
-	], __WEBPACK_AMD_DEFINE_RESULT__ = function( module /* dependencies params go here */){
+	"use strict";
 
-	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-/***/ },
-/* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
-
-	// this is a custom module of your library
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [
-
-	], __WEBPACK_AMD_DEFINE_RESULT__ = function(){
-
-	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__))
+	// this is the entry point for your library
+	module.exports = example;
+	function example() {
+	  return "This is an example function";
+	}
 
 /***/ }
 /******/ ])
