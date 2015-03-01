@@ -24,7 +24,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /src\/.*\.js$/, loader: '6to5-loader'}
+      { test: /src\/.*\.js$/, loader: 'babel-loader'}
     ]
   }
 };

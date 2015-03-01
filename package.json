@@ -11,9 +11,9 @@
     "jshint": "node_modules/.bin/jshint `npm run -s js-files`",
     "fixmyjs": "node_modules/.bin/fixmyjs --legacy `npm run -s js-files`",
     "coveralls": "npm run test-ci && cat ./coverage/phantomjs/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-    "build-commonjs": "./node_modules/.bin/6to5 src --out-dir dist/commonjs --source-maps --modules common",
-    "build-amd": "./node_modules/.bin/6to5 src --out-dir dist/amd --source-maps --modules amd",
-    "build-system": "./node_modules/.bin/6to5 src --out-dir dist/systemjs --source-maps --modules system",
+    "build-commonjs": "./node_modules/.bin/babel src --out-dir dist/commonjs --source-maps --modules common",
+    "build-amd": "./node_modules/.bin/babel src --out-dir dist/amd --source-maps --modules amd",
+    "build-system": "./node_modules/.bin/babel src --out-dir dist/systemjs --source-maps --modules system",
     "build-standalone": "./node_modules/.bin/webpack",
     "build-all": "rm -rf ./dist && npm run build-commonjs && npm run build-amd && npm run build-system && npm run build-standalone",
     "verify": "npm run fixmyjs; npm run jshint",
@@ -23,9 +23,9 @@
   "author": "yetu",
   "license": "MIT",
   "devDependencies": {
-    "6to5": "^3.6.5",
-    "6to5-core": "^3.6.5",
-    "6to5-loader": "^3.0.0",
+    "babel": "^4.6.3",
+    "babel-core": "^4.6.3",
+    "babel-loader": "^4.0.0",
     "coveralls": "^2.11.1",
     "fixmyjs": "^1.0.2",
     "husky": "^0.6.2",
@@ -42,7 +42,7 @@
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-safari-launcher": "^0.1.1",
     "karma-webpack": "^1.5.0",
-    "webpack": "^1.5.3"
+    "webpack": "^1.6.0"
   },
   "jspm": {
     "main": "./dist/system/index",
@@ -51,5 +51,5 @@
       "lib": "dist"
     }
   },
-    "dependencies": {}
-  }
+  "dependencies": {}
+}
